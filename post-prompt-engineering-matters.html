@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Prompt Engineering Matters More Than You Think | Alimehdi Malpara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="light-theme">
+    <header class="header header--light">
+        <nav class="header__nav">
+            <a href="index.html#home" class="header__logo header__logo--dark">AM</a>
+            <ul class="header__menu">
+                <li><a href="index.html#work" class="header__link header__link--dark">Work</a></li>
+                <li><a href="index.html#journey" class="header__link header__link--dark">Journey</a></li>
+                <li><a href="blog.html" class="header__link header__link--dark">Blog</a></li>
+                <li><a href="index.html#contact" class="header__link header__link--dark">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="post-page">
+        <article class="post">
+            <header class="post__header">
+                <h1 class="post__title">Why Prompt Engineering Matters More Than You Think</h1>
+                <div class="post__meta">
+                    <span class="post__meta-item">September 17, 2025</span>
+                    <span class="post__meta-item">10 min read</span>
+                </div>
+            </header>
+
+            <div class="post-share">
+                <a href="#" id="share-post" aria-label="Share this post">Share</a>
+                <a href="#" id="copy-link" aria-label="Copy link">Copy Link</a>
+            </div>
+
+
+            <div class="post__content">
+                <p>Many people think prompt engineering is just phrasing a question in a clever way. That view is too
+                    small. Real prompt engineering is the structure that turns a clever demo into a reliable product. It
+                    is how we control inputs, guide outputs, and measure quality over time.</p>
+
+                <h2>What strong prompts include</h2>
+                <ul>
+                    <li><strong>Clear role and goal.</strong> Tell the model who it is and what success looks like.</li>
+                    <li><strong>Constraints.</strong> Set format, tone, length, and rules that prevent drift.</li>
+                    <li><strong>Good examples.</strong> Show a few inputs and the exact outputs you expect.</li>
+                    <li><strong>Context that matters.</strong> Give only the information that helps the task.</li>
+                    <li><strong>Evaluation loop.</strong> Test, compare, and improve the prompt with real inputs.</li>
+                </ul>
+
+                <h2>Why this matters in production</h2>
+                <p>In production, a model is only as useful as the system around it. Without structure, the same request
+                    can produce different answers. With structure, outputs are more stable. Constraints reduce weird
+                    edge cases. Examples reduce guesswork. The result is higher trust and faster delivery.</p>
+
+                <h2>How I test prompts</h2>
+                <ol>
+                    <li>Pick a single task and define what good output looks like.</li>
+                    <li>Create two or three prompt variants.</li>
+                    <li>Run them on a fixed set of inputs. Track accuracy and clarity.</li>
+                    <li>Compare results. Keep the best parts and try again.</li>
+                </ol>
+                <p>This simple loop is how a prompt moves from decent to dependable. It takes less time than fixing
+                    issues later.</p>
+
+                <h2>Common mistakes</h2>
+                <ul>
+                    <li><strong>Vague instructions.</strong> Be specific about the goal and the audience.</li>
+                    <li><strong>Too much context.</strong> More text is not always helpful. Noise hurts accuracy.</li>
+                    <li><strong>No examples.</strong> If quality matters, include at least one good example.</li>
+                    <li><strong>No measurement.</strong> If you do not measure output quality, you cannot improve it.
+                    </li>
+                </ul>
+
+                <h2>What to try today</h2>
+                <ul>
+                    <li>Pick one prompt you use often. Write two variants with clearer constraints.</li>
+                    <li>Test both on the same inputs. Record which gives better results.</li>
+                    <li>Save the better version and repeat next week.</li>
+                </ul>
+
+                <h2>Takeaway</h2>
+                <p>Prompt engineering is a practice. When you add roles, constraints, examples, and evaluation, your
+                    models work better and fail less. That saves time, reduces cost, and moves your product from hope to
+                    reliability.</p>
+            </div>
+
+            <footer class="post-footer">
+                <a class="post-nav prev" href="blog.html">&larr; Back to Blog</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer footer--light">
+        <p>&copy; 2025 Alimehdi Malpara. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
