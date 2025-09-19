@@ -29,10 +29,10 @@
     <main class="post-page">
         <article class="post">
             <header class="post__header">
-                <h1 class="post__title">From Firefighting to Profit Center: A DevOps Turnaround</h1>
+                <h1 class="post__title">Case Study: A Forensic DevOps Audit that Generated $55,808 in Value</h1>
                 <div class="post__meta">
                     <span class="post__meta-item">August 10, 2025</span>
-                    <span class="post__meta-item">6 min read</span>
+                    <span class="post__meta-item">9 min read</span>
                 </div>
             </header>
 
@@ -43,27 +43,97 @@
 
 
             <div class="post__content">
-                <p>When I took over a DevOps function, it was losing money and fighting constant issues. We changed that
-                    with audits, automation, and financial clarity. The same habits now help me ship reliable AI
-                    systems.</p>
+                <h2>Executive Summary</h2>
+                <p>I took ownership of a DevOps department operating in a state of chaos, with a sprawling, undocumented
+                    infrastructure that was driving significant financial loss and operational risk. By conceiving and
+                    executing a comprehensive, multi-provider forensic audit, I established a unified system for
+                    managing
+                    the entire technology stack. This initiative transformed the department from a reactive cost center
+                    into
+                    a predictable profit engine, delivering a total documented optimization impact of <strong>$55,808.05
+                        CAD</strong> and achieving <strong>$7,200</strong> in combined recurring monthly savings.</p>
+                <p>This document details the systematic process, the technical challenges overcome, and the direct
+                    financial
+                    outcomes of this turnaround. The core principles of this success are directly applicable to
+                    engineering
+                    efficient, reliable, and production-grade AI systems.</p>
 
-                <h2>First steps</h2>
-                <ul>
-                    <li>Automate audits with scripts to find idle resources.</li>
-                    <li>Decommission unused sites and servers to stop waste.</li>
-                    <li>Match invoices to services to recover missing revenue.</li>
-                </ul>
+                <h2>Phase 1: Architecting the Single Source of Truth</h2>
+                <p>The foundational flaw was a lack of visibility. Without a centralized inventory, effective management
+                    was
+                    impossible. My first and most critical action was to architect and build a <strong>Master Billing &
+                        Resource Sheet</strong> from the ground up. This was not a simple spreadsheet; it was a
+                    comprehensive command center for the entire operation.</p>
+                <p>The process was meticulous. First, I compiled a complete inventory of every service provider,
+                    including
+                    multiple AWS accounts, DigitalOcean, Kinsta, Hostinger, Namecheap, and Laravel Vapor. Then, I
+                    systematically audited each provider to document every active resource. Each asset, from servers and
+                    databases to domains and SSL certificates, was meticulously cataloged and color-coded by its type,
+                    associated client, hosting provider, and billing source. This master sheet replaced ambiguity with
+                    auditable fact, forming the basis for all subsequent actions.</p>
 
-                <h2>Discipline that transfers to AI</h2>
-                <ul>
-                    <li>Measure everything. Track outcomes and cost.</li>
-                    <li>Create repeatable checks. Do not rely on memory.</li>
-                    <li>Improve in small steps and publish changes.</li>
-                </ul>
+                <h2>Phase 2: The Multi-Provider Forensic Audit</h2>
+                <p>With the master sheet as my map, I launched a series of deep dive audits to reconcile our inventory
+                    with
+                    reality.</p>
+                <p><strong>Solving the AWS Obfuscation:</strong> The primary technical hurdle was AWS, which does not
+                    provide a simple cost breakdown per instance. I developed a custom methodology to overcome this. By
+                    utilizing 14-day AWS Cost Explorer data, I painstakingly mapped cryptic resource IDs to their
+                    corresponding instance names and extrapolated the approximate monthly costs. This
+                    reverse-engineering
+                    provided the resource specific cost visibility we desperately needed.</p>
+                <p><strong>Uncovering Service Gaps in DigitalOcean:</strong> The audit of our Droplets revealed a
+                    critical
+                    service gap. I discovered instances where clients were being billed for backup services that were
+                    not
+                    actually enabled on their servers. I immediately enabled the contractually required backups, closing
+                    a
+                    risk exposure, while also decommissioning unused Droplets and cleaning up orphaned storage volumes
+                    to
+                    reduce waste.</p>
+                <p><strong>Reconciling Ghost Infrastructure:</strong> Auditing Hostinger and Namecheap uncovered dozens
+                    of
+                    "ghost" domains and websites, assets configured in our systems but not pointing to any active
+                    service.
+                    These were remnants from old development environments, creating both clutter and risk. I compiled a
+                    definitive list for developer review, mitigated the risk of accidental expiration of critical
+                    domains,
+                    and ensured accurate renewal billing.</p>
 
-                <h2>Takeaway</h2>
-                <p>Great engineering is not only about shiny tools. It is about simple habits that compound. The same
-                    thinking that turns a DevOps unit around also makes AI products stable.</p>
+                <h2>Phase 3: Translating Technical Cleanup into Financial Impact</h2>
+                <p>This systematic approach translated directly into hard numbers. The <strong>$55,808.05 CAD</strong>
+                    total
+                    impact was a result of three key streams of work:</p>
+                <p><strong>1. Recovered Uninvoiced Operational Value ($28,456.05 CAD):</strong> The most significant
+                    impact
+                    came from becoming a revenue detective. The master sheet made it instantly clear where we were
+                    delivering and paying for services that were never invoiced. Recovering this value was the single
+                    largest contributor to the turnaround.</p>
+                <p><strong>2. Strategic Shutdowns & Price Uplifts ($17,400 CAD):</strong> Armed with hard data, I
+                    decommissioned redundant infrastructure. The audit also revealed a major client whose infrastructure
+                    cost $283/month, while they were only being billed $452/year. Correcting that single invoice created
+                    a
+                    <strong>$6,460 USD annual revenue increase</strong>.
+                </p>
+                <p><strong>3. License & Resource Optimization ($9,952 CAD):</strong> Finally, I systematically
+                    eliminated
+                    waste by removing unused software licenses and shutting down zombie servers identified by my audit
+                    scripts. This effort alone contributed to the recurring <strong>$7,200 in combined monthly
+                        savings</strong>.</p>
+
+                <h2>Conclusion: The DevOps Mindset in an AI World</h2>
+                <p>This turnaround was successful not because of a specific tool, but because of a relentless,
+                    systematic
+                    mindset. It required the patience of a forensic accountant, the technical skill to solve complex
+                    data
+                    challenges, and the business acumen to translate those findings into financial impact.</p>
+                <p>This is the exact mindset required for engineering excellence in the AI domain. Whether you're
+                    hunting
+                    for a zombie server that costs $50 a month or an unoptimized prompt wasting thousands in token fees,
+                    the
+                    principle is the same: create absolute visibility, measure everything, and build disciplined,
+                    repeatable
+                    systems that deliver real-world value.</p>
             </div>
 
             <footer class="post-footer">
