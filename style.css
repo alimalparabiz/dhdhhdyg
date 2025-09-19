@@ -57,9 +57,37 @@ body { background-color: var(--color-bg-dark); color: var(--color-text-light); f
 /* === STORY & TOOLS RIBBON === */
 .story { padding: 6rem 5%; text-align: center; }
 .story__line { font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; color: var(--color-heading-light); margin-bottom: 2rem; }
-.tools-ribbon { overflow: hidden; padding: 2rem 0; background-color: #131313; white-space: nowrap; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
-.tools-ribbon__track { display: inline-block; animation: scroll-ribbon 20s linear infinite; }
-.tools-ribbon__track span { display: inline-block; padding: 0 2rem; font-size: 1rem; color: var(--color-text-light); letter-spacing: 0.05rem; font-weight: 500; }
+.tools-ribbon {
+  overflow: hidden;
+  padding: 2rem 0;
+  background-color: #131313;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+  position: relative;
+}
+
+.tools-ribbon__track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll-ribbon 40s linear infinite;
+}
+
+.tools-ribbon__track span {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+.tools-ribbon__track:hover {
+  animation-play-state: paused;
+}
+.tools-ribbon__track.reverse {
+  animation-direction: reverse;
+}
 
 /* === FINAL ACCORDION WORK SECTION === */
 .work { padding: 6rem 5%; max-width: 1200px; margin: 0 auto; }
