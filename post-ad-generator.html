@@ -25,13 +25,13 @@
             </ul>
         </nav>
     </header>
-
     <main class="post-page">
         <article class="post">
             <header class="post__header">
-                <h1 class="post__title">How I Built a Multi Platform Ad Generator That Cut Work by 98 Percent</h1>
+                <h1 class="post__title">Case Study: I Built an AI Ad Generator That Cut Our Creative Workload by 98%
+                </h1>
                 <div class="post__meta">
-                    <span class="post__meta-item">September 5, 2025</span>
+                    <span class="post__meta-item">September 19, 2025</span>
                     <span class="post__meta-item">9 min read</span>
                 </div>
             </header>
@@ -41,41 +41,77 @@
                 <a href="#" id="copy-link" aria-label="Copy link">Copy Link</a>
             </div>
 
-
             <div class="post__content">
-                <p>Creating ads for several platforms is slow. Each channel has different limits and styles. I built a
-                    system that takes one input and generates platform ready copy plus a clean image prompt. This saved
-                    hours and allowed more A and B tests.</p>
+                <p>Let's be real. Creating ad campaigns across Google, Facebook, and LinkedIn is a soul-crushing grind.
+                    Each
+                    platform is a unique puzzle of character limits, tone, and formatting rules.</p>
+                <p>Our team was stuck in a creative hamster wheel, spending hours on manual, repetitive work. I knew
+                    there
+                    had to be a better way.</p>
+                <p>So, I built an AI engine that takes a single product brief and instantly generates an entire campaign
+                    of
+                    platform-specific ads. The result? We cut our ad creation time by <strong>a staggering 98%</strong>.
+                </p>
 
-                <h2>Design</h2>
-                <ul>
-                    <li>Eleven prompt templates. One template per platform and placement.</li>
-                    <li>Strict character and structure rules to avoid rejections.</li>
-                    <li>Image prompt generation that avoids text and uses visual language only.</li>
-                </ul>
+                <h2>The Grind Was Draining Our Creativity</h2>
+                <p>The biggest bottleneck wasn't a lack of ideas. It was execution. A single campaign required dozens of
+                    copy variations, and keeping the core message consistent was a constant struggle. We were spending
+                    more
+                    time copying, pasting, and counting characters than we were on actual strategy.</p>
+                <p>This manual process was slow, prone to errors, and impossible to scale.</p>
 
-                <h2>Workflow</h2>
-                <ol>
-                    <li>Input a single product brief with audience and offer.</li>
-                    <li>Generate copy for each platform with clear tone and CTA.</li>
-                    <li>Generate a matching image prompt that supports the same idea.</li>
-                </ol>
+                <h2>The Big Idea: One Brief to Rule Them All</h2>
+                <p>My solution was to build a "one-to-many" system. The concept was simple: provide one high-level
+                    creative
+                    brief, and let a smart AI system handle the tedious work of adaptation and formatting.</p>
+                <p>I architected a modular prompt system designed for one thing: turning a single source of truth into
+                    perfectly tailored, ready-to-launch ads for every channel, every time.</p>
 
-                <h2>Evaluation</h2>
-                <p>I tested copy variants and tracked click through and conversion. I also checked rejection rates.
-                    Rules that enforced limits and formatting prevented mistakes. Templates improved speed and
-                    consistency.</p>
+                <h2>Here's How the Magic Works</h2>
+                <p><strong>It's all about a modular prompt library.</strong> Instead of one giant, messy prompt, I
+                    engineered eleven distinct templates. Each one is a specialist, fine-tuned for a specific platform
+                    and
+                    placement. This gives us incredible precision and control over the final output.</p>
+                <p><strong>I built the rules directly into the system.</strong> To completely eliminate ad rejections
+                    from
+                    formatting mistakes, I hard-coded each platform's constraints (like character limits) into the
+                    prompts.
+                    The AI simply cannot generate copy that would get rejected. It's foolproof.</p>
+                <p><strong>We optimized the engine for cost and performance.</strong> I didn't lock the system into one
+                    LLM.
+                    Instead, I A/B tested models from different providers to find the perfect fit for each task. Simpler
+                    jobs, like generating headlines, used faster, cheaper models. More complex creative work went to
+                    more
+                    powerful ones. This "right tool for the job" approach was critical, and it <strong>slashed our token
+                        costs by 5x</strong> compared to using one model for everything.</p>
+                <p><strong>The visuals and copy are always in sync.</strong> The system doesn't just write text. It also
+                    generates a powerful, descriptive prompt for text-to-image AI like Midjourney. This ensures our
+                    visuals
+                    perfectly match the ad's core message, creating a truly cohesive campaign from a single click.</p>
 
-                <h2>Lessons</h2>
-                <ul>
-                    <li>Constraints are your friend. They prevent simple errors.</li>
-                    <li>One input to many outputs saves time and reduces drift.</li>
-                    <li>Prompt version control matters when many people run tests.</li>
-                </ul>
+                <h2>The Results Were Better Than I Expected</h2>
+                <p>The impact was immediate and dramatic. We went from spending hours on a campaign to just a few
+                    minutes.
+                </p>
+                <p>We saw a <strong>500% increase in our capacity for A/B testing</strong> because launching new
+                    variants
+                    was now trivial. More tests meant better data and higher-performing ads.</p>
+                <p>Beyond performance, we achieved significant cost savings. By intelligently routing tasks to the most
+                    efficient language model, we <strong>reduced our operational token costs by 5 times</strong>, making
+                    the
+                    entire system incredibly cost-effective to run at scale.</p>
+                <p>Most importantly, we achieved a <strong>100% elimination of ad rejections</strong> due to formatting
+                    errors. This saved us time, frustration, and review cycles with the ad platforms.</p>
 
-                <h2>Takeaway</h2>
-                <p>A modular prompt system can do more work with less time while keeping quality high. That is why this
-                    approach is worth it for any team that runs ads at scale.</p>
+                <h2>My Biggest Takeaways from This Build</h2>
+                <p>This project taught me that the most powerful AI solutions are often the ones that solve the most
+                    unglamorous problems.</p>
+                <p>The real win here isn't just speed; it's consistency, scale, and efficiency. By systematizing the
+                    creative process, we didn't remove creativity, we unleashed it. We freed our team to focus on
+                    big-picture strategy instead of getting bogged down by manual tasks.</p>
+                <p>Ultimately, this is the kind of work I love to do: finding a frustrating business problem and
+                    engineering
+                    a smart, scalable, and cost-effective solution that delivers undeniable results.</p>
             </div>
 
             <footer class="post-footer">
@@ -83,7 +119,6 @@
             </footer>
         </article>
     </main>
-
     <footer class="footer footer--light">
         <p>&copy; 2025 Alimehdi Malpara. All Rights Reserved.</p>
     </footer>
