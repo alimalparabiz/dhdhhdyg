@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Building a Sales Enablement GPT | Alimehdi Malpara</title>
+    <title>Architecting a Production-Grade Sales AI | Alimehdi Malpara</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,8 +30,7 @@
         <article class="post">
             <header class="post__header">
                 <h1 class="post__title">Architecting a Production-Grade Sales AI: A Case Study in RAG and Process
-                    Automation
-                </h1>
+                    Automation</h1>
                 <div class="post__meta">
                     <span class="post__meta-item">September 12, 2025</span>
                     <span class="post__meta-item">12 min read</span>
@@ -43,83 +42,47 @@
                 <a href="#" id="copy-link" aria-label="Copy link">Copy Link</a>
             </div>
 
-
             <div class="post__content">
-                <p>In enterprise sales, speed and relevance win deals. But what happens when your most valuable assets,
-                    like
-                    decades of case studies and product specs, are locked away in unstructured documents? Your sales
-                    cycle
-                    grinds to a halt. I saw this firsthand as sales reps spent hours on a manual scavenger hunt for
-                    data.
-                </p>
-                <p>To solve this, I architected a full-stack, production-grade Sales Enablement AI. The result was a
-                    transformative shift in efficiency. Mundane research that once took sales reps over <strong>two
-                        hours</strong> was now completed in <strong>less than five minutes</strong>. This greater than
-                    90%
-                    reduction in time led to a <strong>40% boost in qualified proposal output</strong> per quarter.</p>
-
-                <h2>The Architecture: A Scalable, Data-Orchestration Engine</h2>
-                <p>The system's core is a high-performance backend built with <strong>Python and Flask</strong>, chosen
-                    for
-                    its reliability and rapid development capabilities. This was not a simple API endpoint; it was a
-                    complete data processing and orchestration engine designed for scalability.</p>
-                <p>The first component was a multi-source <strong>ETL (Extract, Transform, Load) pipeline</strong>. It
-                    connected to a <strong>WordPress API</strong> for real-time web content and an <strong>AWS S3
-                        bucket</strong> for our extensive library of PowerPoint and PDF case studies. The backend engine
-                    was
-                    responsible for extracting raw text and metadata, normalizing the unstructured data into a
-                    structured
-                    JSON format, and preparing it for retrieval.</p>
-                <p>This structured data was then indexed, creating a high-quality, instantly searchable knowledge core
-                    for
-                    our <strong>Retrieval-Augmented Generation (RAG)</strong> system. This crucial step ensured that all
-                    AI-generated responses were grounded in factual, company-approved data.</p>
-
-                <h2>The Workflow: A Unified API Call for a Complex Task</h2>
-                <p>From the user's perspective, the process is deceptively simple: ask a question, get an answer. Behind
-                    the
-                    scenes, a complex orchestration takes place within a <strong>single, unified API call</strong>
-                    designed
-                    for maximum efficiency.</p>
-                <p>The frontend intelligently synthesizes the user's query and any relevant context into a highly
-                    optimized
-                    prompt, ensuring it stays within the model's <strong>8,000-character context window</strong>. This
-                    payload is sent to the backend, which then orchestrates the entire task. It performs the search to
-                    retrieve relevant data chunks, injects them into the prompt, generates the tailored proposal text
-                    using
-                    the LLM, and processes the output.</p>
-                <p>For document generation, the backend's role is even more sophisticated. It generates the new,
-                    personalized case study, securely saves the file to an <strong>AWS S3 bucket</strong>, generates a
-                    <strong>pre-signed, time-sensitive download link</strong>, and delivers this link back to the user.
-                    The
-                    temporary file is then automatically deleted after a set period to ensure data hygiene and security.
-                    This is an end-to-end, production-ready workflow.
+                <p>In enterprise sales, speed and relevance win deals. Yet when case studies, client wins, and technical
+                    specs are scattered across unstructured decks and documents, the sales cycle slows to a crawl. I saw
+                    this firsthand as sales reps spent hours piecing together proposals instead of focusing on clients.
                 </p>
 
-                <h2>The Impact: From Hours of Searching to Seconds of Asking</h2>
-                <p>This robust architecture was the key to unlocking staggering efficiency gains for the sales team. The
-                    results were immediate and measurable:</p>
+                <p>To fix this, I built a full-stack Sales Enablement AI powered by Retrieval-Augmented Generation
+                    (RAG). Research that once took more than two hours was reduced to less than five minutes. That
+                    efficiency translated into a 40 percent boost in qualified proposal output per quarter.</p>
+
+                <h2>The Architecture: From Chaos to a Knowledge Core</h2>
+                <p>The system runs on a backend built with <strong>Python and Flask</strong>. It is more than an API
+                    endpoint: it is a full orchestration engine designed for scale and reliability.</p>
+                <p>A multi-source <strong>ETL pipeline</strong> ingests content from a <strong>WordPress API</strong>
+                    and an <strong>AWS S3 bucket</strong> of PDFs and PowerPoint decks. Raw text and metadata are
+                    normalized into structured JSON, indexed, and stored as a high-quality knowledge core. This ensures
+                    all AI responses are grounded in approved company data.</p>
+
+                <h2>The Workflow: One Query, One Answer</h2>
+                <p>From the sales rep’s perspective, the workflow feels simple: ask a question, get an answer. Behind
+                    the scenes, a single API call coordinates the full task.</p>
+                <p>The frontend compresses the query into an optimized prompt, which is sent to the backend. The engine
+                    retrieves the most relevant chunks, injects them into the prompt, and calls the LLM to generate
+                    precise, tailored responses. For proposals, the backend goes further by creating a personalized case
+                    study, saving it to <strong>AWS S3</strong>, generating a time-limited pre-signed link, and
+                    returning it to the user. Temporary files are deleted automatically to ensure data hygiene.</p>
+
+                <h2>The Impact: From Hours to Minutes</h2>
                 <ul>
-                    <li><strong>Transformative Speed:</strong> The time required to find specific facts, figures, and
-                        case
-                        studies was reduced by over 90%, turning a 2-hour manual process into a 5-minute automated one.
-                    </li>
-                    <li><strong>40% Increase in Proposal Output:</strong> By automating the most time-consuming parts of
-                        proposal creation, the team increased its qualified proposal output by 40% per quarter.</li>
-                    <li><strong>100% Information Consistency:</strong> The system eliminated information silos and
-                        ensured
-                        the entire team used the same up-to-date facts, dramatically improving brand consistency and
-                        proposal quality.</li>
+                    <li><strong>Speed:</strong> Research time dropped by more than 90 percent, cutting a two-hour
+                        process down to under five minutes.</li>
+                    <li><strong>Output:</strong> Automating repetitive work increased qualified proposal volume by 40
+                        percent per quarter.</li>
+                    <li><strong>Consistency:</strong> Every rep worked from the same knowledge core, eliminating silos
+                        and ensuring brand alignment.</li>
                 </ul>
 
-                <h2>Conclusion: An Automated System, Not Just an Assistant</h2>
-                <p>This Sales Enablement tool is more than a GPT. It is a fully-automated, scalable system that handles
-                    data
-                    ingestion, processing, retrieval, generation, and secure asset delivery. It's a testament to my
-                    philosophy of building complete, end-to-end AI products that solve real business problems and are
-                    engineered for the rigors of a production environment.</p>
-                <p>A great AI product isn't just about a powerful model; it's about the robust, reliable, and scalable
-                    systems you build around it.</p>
+                <h2>Conclusion: More Than Just a GPT</h2>
+                <p>This project was not a chatbot demo. It was a production-grade system for ingestion, processing,
+                    retrieval, generation, and secure delivery. It reflects my philosophy that powerful AI models only
+                    create value when wrapped in robust, reliable systems designed for real-world business outcomes.</p>
             </div>
 
             <footer class="post-footer">
@@ -127,6 +90,7 @@
             </footer>
         </article>
     </main>
+
     <footer class="footer footer--light">
         <p>&copy; 2025 Alimehdi Malpara. All Rights Reserved.</p>
     </footer>
